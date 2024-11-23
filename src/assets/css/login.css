@@ -1,0 +1,235 @@
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #023047;
+    background-color: #E3F3F2;
+}
+
+.sessao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+}
+
+#inicio{
+    width: 100px;
+    height: 50px;
+    z-index: 5;
+    position: relative;
+    bottom: 580px;
+    
+}
+
+#icone-inicio{
+    background-color: #ADDBD8;
+    border-radius: 50%;
+    width: 200%;
+    position: relative;
+    right: 40px;
+    bottom: 10px;
+    
+}
+
+.area-administrador {
+    position: absolute;
+    top: 4%;
+    right: 0%;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #EBFBFF;
+    color: #005B79;
+    padding: 0 10px;
+    font-weight: 700;
+    border-radius: 30px 0 0 30px;
+    z-index: 5; /* Assegura que está sobre a imagem */
+}
+.imagem-login {
+    margin-bottom: 0; /* Remove todas as margens */
+    position: relative;
+    max-width: 100%; /* Garante que a imagem se ajuste à largura do contêiner */
+}
+
+.logo-titulo{
+    width: 100px;
+}
+
+.imagem-login img {
+    width: 100%; /* Garante que a imagem se ajuste à largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+
+.pagina-login {
+    background: linear-gradient(to bottom, #ADDBD8, #E3F3F2);
+    border-radius: 80px;
+    width: 80%;
+    max-width: 1000px;
+    position: relative;  /* Certifique-se que está definido como relative */
+    margin-top: -50px; /* Ajuste conforme necessário para sobrepor a imagem */
+    text-align: center;
+    z-index: 1; /* Garante que o main apareça sobre a imagem */
+    min-height: 596px; /* Altura mínima inicial */
+    padding: 40px 20px; /* Espaçamento interno adequado */
+}
+
+.titulo-logo-login{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 60px;
+    width: 650px;
+}
+
+.titulo-login {
+    display: flex;
+    flex-direction: column; /* Continua com a direção em coluna */
+    align-items: center; /* Centraliza os títulos horizontalmente */
+    margin: 40px 0 60px;
+    color: #005B79;
+}
+
+.login-titulos-meu-acompanhante-esqueda {
+    align-self: flex-start; /* Alinha este título à esquerda */
+    font-size: 40px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.login-titulos-meu-acompanhante-center {
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.login-titulos-meu-acompanhante-direita {
+    align-self: flex-end; /* Alinha este título à direita */
+    font-size: 50px;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.formulario-login {
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens ao centro */
+    width: 40%;
+    margin: 0 auto; /* Centraliza a div `.campo` horizontalmente no contêiner pai */
+    color: #005B79;
+    font-weight: 700;
+}
+
+.entrada-login {
+    width: 80%; /* Define uma largura menor para permitir a centralização com a margem */
+    padding: 10px;
+    margin: 10px 20px 20px 20px; /* Centraliza horizontalmente dentro do `.campo` */
+    background-color: #EBFBFF;
+    border: 2px solid #4A89A0;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+
+.campo label {
+    align-self: flex-start; /* Alinha a label à esquerda dentro do alinhamento centralizado do `.campo` */
+    width: 100%; /* Ocupa toda a largura, mas alinha o texto à esquerda */
+    margin-left: 10%; /* Ajuste para alinhar o texto da label com o input centralizado */
+    text-align: left; /* Garante que o texto da label está alinhado à esquerda */
+}
+
+.botao-entrar{
+    background-color: #005A77;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 20px; /* Aumentado o padding para um botão maior */
+    font-size: 18px; /* Fonte maior para melhor legibilidade */
+    width: 30%; /* Aumentado a largura para preencher o campo */
+}
+.botao-entrar:hover {
+    background-color: #004C66;
+}
+
+.esqueceu-senha {
+    color: #005B79;
+    font-weight: 700;
+    display: block; /* Garante que o link apareça em sua própria linha */
+    margin-top: 20px; /* Espaço acima do link para separá-lo visualmente do botão */
+    text-align: center; /* Centraliza o link abaixo do botão */
+}
+
+@media (max-width: 768px) {
+    .pagina-login {
+        margin-top: -30px; /* Um ajuste menos agressivo para telas menores */
+    }
+}
+
+@media (max-width: 789px){
+    .titulo-logo-login{
+        width: 500px;
+    }
+
+    .login-titulos-meu-acompanhante-esqueda,
+    .login-titulos-meu-acompanhante-center {
+        font-size: 30px; 
+    }
+    .login-titulos-meu-acompanhante-direita{
+        font-size: 40px;
+    }
+    .campo {
+        width: 80%; 
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .titulo-logo-login{
+        width: 430px;
+    }
+
+    .login-titulos-meu-acompanhante-esqueda,
+    .login-titulos-meu-acompanhante-center{
+        font-size: 30px; 
+    }
+
+    .login-titulos-meu-acompanhante-direita{
+        font-size: 38px;
+        padding-right: 0;
+    }
+    
+    .logo-titulo {
+        width: 60px; 
+    }
+    
+    .campo {
+        width: 80%; 
+    }
+
+    label{
+        font-size: 14px;
+    }
+
+    .botao-entrar{
+        font-size: 14px;
+        width: auto;
+    }
+    .esqueceu-senha{
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <link rel="stylesheet" href="./assets/css/resest.css">
+    <link rel="stylesheet" href="./assets/css/inicioDark.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>Meu Acompanhante</title>
+</head>
+
+<body>
+    <div class="scroll-container">
+
+        <header id="menu">
+            <nav id="menu-esquerdo">
+                <figure class="fig-logo">
+                    <img id="logo-menu" src="./assets/images/logoMeuAcompanhante.svg" alt="logo do meu acompanhante" title="logo do meu acompanhante">
+                </figure>
+            </nav>
+            <div class="botoes-rolagem">
+                <button class="fonte-size" onclick="redimensionarFonte()"> <img class="fontes-tamanho"
+                        src="assets/images/iconeAcessibiliadeTexto.svg"></button>
+            </div>
+
+            <nav id="menu-direito">
+                <p class="dark-mode"></p>
+                <div id="trilho" class="trilho">
+                    <div class="indicador">
+                        <figure>
+                            <img class="icone-dark-light" src="./assets/images/icone-sol-dark-mode.svg" alt="icone modo escuro" title="icone modo escuro">
+                        </figure>
+                    </div>
+                </div>
+                <div id="menu-login">
+                    <a class="link-login" href="./login.html">
+                        <figure class="login-fig">
+                            <img id="login-img" src="./assets/images/icone-login.svg" alt="icone login de usuario" title="icone login de usuario">
+                            <p class="login-text">login</p>
+                        </figure>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <section id="banner" title="banner principal">
+                <div class="banner-esquerda"></div>
+                <div class="banner-direita">
+                    <figure>
+                        <img class="logo-completa" src="../src/assets/images/logoComTexto.svg" alt="logo principal" title="logo principal">
+                    </figure>
+                </div>
+        </section>
+
+        <div class="gradient-header"></div>
+
+        <div class="container">
+            <div class="card">
+                <div class="icon">
+                    <figure id="medico">
+                        <img src="assets/images/iconeMedico.png" alt="ícone de médico" title="ícone de médico">
+                    </figure>
+                </div>
+                <div class="text">
+                    <h2>Negligência no uso de EPI'S</h2>
+                    <button class="botaoLeitor"><img class="caixa-som"
+                            src="./assets/images/iconeAutoFalante.png">
+                    </button>
+                    <a id="botaomenu1" href="./negligenciaEPIS.html">Leia mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <figure id="higiene">
+                        <img src="assets/images/iconeHigiene.png" alt="icone de higiene" title="icone de higiene">
+                    </figure>
+                </div>
+
+                <div class="text">
+                    <h2>Risco para contaminação cruzada</h2>
+                    <button class="botaoLeitor"><img class="caixa-som"></button>
+                    <a id="botaomenu2" href="./riscoContaminacao.html">Leia mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon-perigo">
+                    <figure id="perigo">
+                        <img src="assets/images/iconeAlerta.png" alt="icone de alerta" title="icone de alerta">
+                    </figure>
+                </div>
+                <div class="text">
+                    <h2>Sinalização e delimitação de áreas de isolamento</h2>
+                    <button class="botaoLeitor"><img class="caixa-som"></button>
+                            <a id="botaomenu3" href="./sinalizacaoAreas.html">Leia mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <figure id="alimentos">
+                        <img src="assets/images/iconeAlimentos.png" alt="icone de alimentos" title="icone de alimentos">
+                    </figure>
+                </div>
+                <div class="text">
+                    <h2>Fluxo irregular de alimentos</h2>
+                    <button class="botaoLeitor"><img class="caixa-som"></button>
+                            <a id="botaomenu4" href="./fluxoIrregular.html">Leia mais</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="shadow-line"></div>
+            <div class="gradient-footer">
+                <nav id="principal-roda-pe">
+                    <ul class="texto-footer">
+                        <li>R. Araquari, s/n - Potengi, Natal - RN | CEP: 59110-390</li>
+                        <li>Telefone: (84) 3232-7831</li>
+                    </ul>
+                    <nav>
+                        <button id="botao-como-chegar">
+                            <p>COMO CHEGAR</p>
+                        </button>
+                    </nav>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="./assets/js/inicio.js"> </script>
+
+</body>
+
+</html>

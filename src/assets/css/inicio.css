@@ -1,0 +1,325 @@
+/* 1. Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+}
+
+/* 2. Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b4dedc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7ec4c4;
+}
+
+/* 3. Menu */
+#menu {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    background-color: #f0f8ff;
+}
+
+.fontes-tamanho {
+    width: 20px;
+}
+
+#menu-esquerdo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+#logo-menu {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.botoes-rolagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 99%;
+    bottom: 40%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.fonte-size {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #7AC6C1;
+    margin-right: 20px;
+}
+
+#menu-direito {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu-login {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.login-fig {
+    width: 100%;
+    height: 70%;
+}
+
+.link-login {
+    text-decoration: none;
+    color: #015771;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #015771;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: monospace;
+}
+
+a:hover {
+    color: black;
+}
+
+#login-img {
+    width: 55px;
+    padding-top: 10px;
+}
+
+/* 4. Banner */
+#banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("../images/banner-principal.jpeg");
+    width: 1440px;
+    height: 500px;
+    background-size: cover;
+}
+
+.banner-esquerda {
+    height: 500px;
+    width: 50%;
+}
+
+.banner-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 50%;
+}
+
+.logo-completa {
+    width: 50%;
+    height: 50%;
+    margin-left: 20%;
+}
+
+/* 5. Gradient Header */
+.gradient-header {
+    background: linear-gradient(to bottom, #DCF0EF, #f0f8ff);
+    height: 90px;
+    width: 1440px;
+}
+
+/* 6. Cards Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 1440px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 630px;
+    height: 230px;
+    background-color: #DEEAF0;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #68aeac;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 22px;
+    padding-top: 35px;
+    color: #015B76;
+    font-weight: 700;
+    height: auto;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+/* 7. Icons */
+.icon, .icon-perigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #7BC8C3;
+    border-radius: 50%;
+    margin-top: -100px;
+    box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.75);
+}
+
+#medico, #higiene, #perigo, #alimentos {
+    display: flex;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+#higiene, #perigo, #alimentos {
+    display: flex;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+/* 8. Buttons */
+.botaoLeitor {
+    background-color: transparent;
+    border: 1px solid #68AEAC;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2e86c1;
+    cursor: pointer;
+}
+
+/* 9. Footer */
+.gradient-footer {
+    background: linear-gradient(to top, #ADDBD8, #f0f8ff);
+    height: 200px;
+}
+
+#principal-roda-pe {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    color: #015771;
+    line-height: 40px;
+}
+
+.texto-footer {
+    font-size: 20px;
+    color: #015B76;
+    font-weight: 700;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#botao-como-chegar {
+    margin-top: 20px;
+    background-color: #7BC8C6;
+    border: 1px solid #68aeac;
+    color: #23638d;
+    padding: 18px 28px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 500ms;
+    font-size: 20px;
+    font-weight: 770;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 10. Shadows */
+.shadow-line {
+    border: 1px solid transparent;
+    margin-top: 30px;
+    width: 1440px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 11. Buttons for Cards */
+#botaomenu1, #botaomenu2, #botaomenu3, #botaomenu4 {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin-top: 5%;
+    background-color: #7BC8C6;
+    border: 1px solid #68aeac;
+    color: #23638d;
+    right: 50px;
+    padding: 12px 18px 28px 15px;
+    border-radius: 45px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 770;
+    font-family: Arial, Helvetica, sans-serif;
+}
